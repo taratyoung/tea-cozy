@@ -1,0 +1,298 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+
+/*html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}*/
+
+body {
+  margin: 0 auto;
+  font-family: Helvetica;
+  /*font-size: 22px;*/
+  color: seashell;
+  background-color: black;
+  /*opacity: 0.9;*/
+  text-align: center;
+}
+
+
+/*header*/
+
+.header-container {
+  display: flex;
+  background-color: yellow;
+  width: 100%;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+}
+
+.header-container img {
+  height: 50px;
+  margin-left: 25px;
+}
+
+.navigation {
+  display: block;
+  margin-right: 20px;
+}
+
+.navigation a {
+  display: inline-block;
+  color: seashell;
+  text-decoration: underline;
+  margin-right: 10px;
+}
+
+.navigation a:hover {
+  color: greenyellow;
+  text-decoration: none;
+}
+
+
+/*header end*/
+
+
+/*main banner start*/
+
+.main-banner-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 65px auto;
+  opacity: 1;
+  background-image: url("../images/img-mission-background.jpg");
+  height: 700px;
+  width: 1200px;
+  background-position: center
+}
+
+.mission-header {
+  display: block;
+  height: 100px;
+  background-color: black;
+  width: 1200px;
+}
+
+.mission-header h2 {
+  margin: 0 auto;
+  padding: 10px 0;
+  font-size: 36px;
+}
+
+.mission-header h4 {
+  display: block;
+  margin: 0 auto;
+  font-size: 22px;
+}
+
+
+/*main banner end*/
+
+
+/*tea section start*/
+
+.tea-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*border: 3px dashed green;*/
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.tea-header {
+  width: inherit;
+}
+
+.tea-header h2 {
+  display: block;
+  margin: 10px auto;
+  font-size: 36px;
+}
+
+.tea-header h4 {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 20px auto;
+  /*border: 3px dashed yellow;*/
+}
+
+.items {
+  /*position: ;*/
+  /*order: 1;
+    display: block;
+    justify-content: center;
+    align-items: flex-end;*/
+  /*height: 200px;
+    width: 300px;*/
+  margin: 10px;
+  /*border: 5px dashed red;
+    background-size: 315px 205px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-: center;*/
+}
+
+.items span {
+  /*position: absolute;*/
+  display: block;
+  /*order: 2;
+    margin-top: 10px;
+    margin-bottom: 10px;*/
+  padding: 5px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+
+/*.items img {
+    display: block;
+    height: 200px;
+    width: 300px;
+}
+
+
+ .fall-berry {
+    background-image: url("../images/img-berryblitz.jpg");
+}
+
+.spiced-rum {
+    background-image: url("../images/img-spiced-rum.jpg");
+}
+
+.donuts {
+    background-image: url("../images/img-donut.jpg");
+}
+
+.myrtle-ave {
+    background-image: url("../images/img-myrtle-ave.jpg");
+}
+
+.bedford {
+    background-image: url("../images/img-bedford-bizarre.jpg");
+}
+
+*/
+
+
+/*tea section end*/
+
+
+/*locations start*/
+
+.locations-wrapper {
+  background-image: url("../images/img-locations-background.jpg");
+  display: block;
+  width: 1200px;
+  height: 500px;
+  margin: 45px auto;
+  padding-top: 45px;
+  background-position: 0 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.locations-wrapper h2 {
+  display: block;
+  text-align: center;
+  width: inherit;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 36px;
+}
+
+.locations-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 40px;
+}
+
+.locations {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex: 1;
+  flex-direction: column;
+  background-color: black;
+  flex-basis: 300px;
+  height: 285px;
+  padding: 0;
+  margin: 0 20px;
+  padding: 10px;
+  font-size: 22px;
+}
+
+.locations h3 {
+  padding: 0;
+  margin: 25px;
+}
+
+
+/*locations end*/
+
+
+/*Footer Start*/
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  height: 201px;
+}
+
+.contact h2 {
+  display: block;
+  font-size: 36px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact h5 {
+  display: block;
+  font-size: 22px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: normal;
+  letter-spacing: .5px;
+}
+
+.copyright p {
+  display: block;
+  text-align: left;
+  margin-top: 40px;
+  margin-left: 25px;
+}
+
+
+/*Footer End*/
